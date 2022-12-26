@@ -1,0 +1,242 @@
+.container{
+    width: 60%;
+    background-color: rgb(192, 223, 152);
+    height: 85%;
+    padding: 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.addNewTodos{
+    width: 100%;
+    height: 18%;
+    background-color: antiquewhite;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+
+}
+
+.addNewTodos_form{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.addNewTodos_box{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.addNewTodos_box input{
+    height: 30px;
+    outline: none;
+    border: 2px solid orange;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.button{
+    border-radius: 10px;
+    height: 35px;
+    background-color: rgb(255, 188, 65);
+    color: white;
+    font-weight: 600;
+    border: none;
+    font-size: 15px;
+    transition: 0.3 ease;
+
+}
+
+.button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.3s ease;
+}
+
+.submit_box{
+    justify-content: end;
+}
+
+.sortTodos{
+    width: 100%;
+    height: 12%;
+    background-color: antiquewhite;
+    border-radius: 7px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.sortTodos_form{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 20px;
+}
+
+.sortTodos_button{
+    width: 25%;
+    height: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.todosList{
+    width: 100%;
+    height: 100%;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    padding: 10px 10px 0px 10px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.todosList_item{
+    width: 100%;
+    min-height: 68px;
+    background-color: rgba(255, 166, 0, 0.3);
+    border-radius: 5px;
+    display: flex;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    gap: 5px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.todosList_item_content{
+    width: 40%;
+    min-height: 68px;
+
+}
+
+.todosList_item_date{
+    width: 25%;
+    min-height: 68px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.todosList_item_action{
+    width: 25%;
+    height: 100%;
+    min-height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.todosList_item_content_title{
+    font-size: 25px;
+    margin-top: 5px;
+   
+}
+
+.todosList_item_content_todos{
+    font-size: 15px;
+    font-weight: 100;
+    overflow-wrap: anywhere;
+    color: rgb(112, 112, 112);
+    margin-top: 5px;
+}
+
+.action_button{
+    width: 30%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todosList::-webkit-scrollbar {
+    width: 2px;
+  }
+   
+.todosList::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px orange
+  }
+   
+.todosList::-webkit-scrollbar-thumb {
+    background-color: orange;
+    outline: 1px solid slategrey;
+  }
+
+.done p{
+    text-decoration: line-through;
+    text-decoration-thickness: 1.2px;
+}
+
+.done h2{
+    text-decoration: line-through;
+    color: rgb(112, 112, 112);
+    text-decoration-thickness: 1.2px;
+}
+
+.done .todosList_item_date_date{
+   /* display: none; */
+}
+
+.done{
+    background-color: rgba(161, 153, 153, 0.786);
+}
+
+.done .update{
+    display: none;
+}
+
+.done .complete{
+    display: none;
+}
+
+.done .todosList_item_action{
+    width: 25%;
+    height: 100%;
+    min-height: 68px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+}
+
+.button_click{
+    background-color: rgb(211, 137, 0);
+}
+
+  
+.header_icons{
+    background-color: rgb(232, 87, 87);
+    position: absolute;
+    right: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5 ease;
+
+}
+
+.header_icons:hover{
+    cursor: pointer;
+    background-color: rgb(177, 23, 23);
+    transition: 0.5 ease;
+}
+
+.header{
+    position: relative;
+    width: 61%;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+}
+
